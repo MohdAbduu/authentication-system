@@ -9,7 +9,7 @@ class DatabaseManager:
             password=DB_CONFIG['password'],
             database=DB_CONFIG['database']
         )
-        # Use buffered=True to automatically fetch all results
+
         self.cursor = self.connection.cursor(dictionary=True, buffered=True)
 
 
