@@ -11,7 +11,7 @@ def main_menu():
 
 def login():
     username = input("Username: ")
-    password = input("Password: ")  # Changed from getpass to input
+    password = input("Password: ") 
 
     db = DatabaseManager()
     result = db.execute_query(
@@ -27,7 +27,7 @@ def login():
 
 def create_account():
     username = input("New username: ")
-    password = input("New password: ")  # Changed from getpass to input
+    password = input("New password: ") 
 
     db = DatabaseManager()
     try:
